@@ -12,14 +12,20 @@ const Contact = () => {
                     I'm here to help you turn your ideas into amazing digital realities.
                     Looking forward to hearing from you soon!
                 </p>
-                <div className="flex justify-center items-center space-x-8">
-                    <div className="bg-gray-800 p-3 rounded-lg flex items-center space-x-2">
+                <div className="flex justify-center items-center space-x-4">
+                    <div className="bg-black p-3 border border-card rounded-lg flex items-center space-x-2">
                         <FaEnvelope className="text-white" />
                         <span>naveen1043.me@gmail.com</span>
                     </div>
-                    <FaLinkedin className="text-2xl text-white cursor-pointer" />
-                    <FaTwitter className="text-2xl text-white cursor-pointer" />
-                    <FaInstagram className="text-2xl text-white cursor-pointer" />
+                    <div className="bg-black p-3 border border-card rounded-lg flex items-center space-x-2">
+                        <FaLinkedin className="text-2xl text-white cursor-pointer" />
+                    </div>
+                    <div className="bg-black p-3 border border-card rounded-lg flex items-center space-x-2">
+                        <FaTwitter className="text-2xl text-white cursor-pointer" />
+                    </div>
+                    <div className="bg-black p-3 border border-card rounded-lg flex items-center space-x-2">
+                        <FaInstagram className="text-2xl text-white cursor-pointer" />
+                    </div>
                 </div>
             </div>
             <div className='text-gray-400 pt-36'>

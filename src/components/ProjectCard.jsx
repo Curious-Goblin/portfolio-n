@@ -8,7 +8,7 @@ export function ProjectCard({ title, year, description, image, buttonText }) {
                     <p className="text-gray-300 text-xl text-left w-full max-w-lg mb-4">{description}</p>
                 </div>
                 <div className="mt-auto">
-                    <button className="bg-black border font-semibold border-white text-white font-bold py-2 px-4 rounded-lg">
+                    <button className="bg-zinc-900 border border-card font-semibold text-white font-bold py-2 px-4 rounded-lg">
                         {buttonText}
                     </button>
                 </div>

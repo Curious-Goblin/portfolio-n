@@ -1,3 +1,14 @@
+const handleDownloadResume = () => {
+  const url = 'https://github.com/Curious-Goblin/resume-n/raw/main/Resume-4.pdf'; // Update with your direct download link
+  const a = document.createElement('a');
+  a.style.display = 'none';
+  a.href = url;
+  a.download = 'resume.pdf'; // Replace with the desired file name
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+};
+
 
 const Intro = () => {
   return (
@@ -14,7 +25,7 @@ const Intro = () => {
       <button className="bg-white font-bold text-black px-6 py-3 rounded-md transform transition-transform hover:scale-105">
           Get in Touch
         </button>
-        <button className="bg-black text-white px-6 py-3 rounded-md border rounded-lg border-white transform transition-transform hover:scale-105">
+        <button onClick={handleDownloadResume} className="bg-black text-white px-6 py-3 rounded-md border rounded-lg border-white transform transition-transform hover:scale-105">
           Download CV
         </button>
       </div>
