@@ -1,0 +1,12 @@
+/* style.css */
+.gradient-text {
+    background: linear-gradient(to right, #FFE074 25%, #50CAE4 35%, #9B5CFF 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.gradient-about {
+    background: linear-gradient(to bottom, #FFFFFF 50%, #EFEFEF 50%, #B0B6BF 90%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
