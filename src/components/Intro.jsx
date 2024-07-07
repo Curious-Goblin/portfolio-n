@@ -1,5 +1,5 @@
 const handleDownloadResume = () => {
-  const url = 'https://github.com/Curious-Goblin/resume-n/raw/main/Resume-4.pdf'; // Update with your direct download link
+  const url = 'https://drive.google.com/uc?export=download&id=1mlqVIwWCgT4ktylVeVZAwad7h8NuY3zG'; // Replace YOUR_FILE_ID with the actual file ID from Google Drive
   const a = document.createElement('a');
   a.style.display = 'none';
   a.href = url;
@@ -8,6 +8,7 @@ const handleDownloadResume = () => {
   a.click();
   document.body.removeChild(a);
 };
+
 
 
 const Intro = () => {
