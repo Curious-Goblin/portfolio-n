@@ -49,7 +49,7 @@ const experiences = [
                 <img 
                   src={experience.logo} 
                   alt={`${experience.title} logo`} 
-                  className="w-8 h-8 mr-4"
+                  className="w-12 h-12 mr-4"
                 />
                 <h3 className="text-2xl font-semibold">{experience.title}</h3>
               </div>

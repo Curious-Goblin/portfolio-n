@@ -1,6 +1,6 @@
 export function ProjectCard({ title, year, description, image, buttonText }) {
     return (
-        <div className="flex justify-between bg-zinc-900 border border-card px-24 py-16 rounded-xl shadow-md mb-8">
+        <div className="flex justify-between gap-4 bg-zinc-900 border border-card px-24 py-16 rounded-xl shadow-md mb-8">
             <div className="flex flex-col justify-between">
                 <div>
                     <h2 className="text-3xl font-bold text-white mb-4">{title}</h2>
@@ -13,7 +13,7 @@ export function ProjectCard({ title, year, description, image, buttonText }) {
                     </button>
                 </div>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="">
                 <img src={image} alt={title} style={{ width: '700px', height: '500px' }} className="border-card rounded-2xl shadow-md" />
             </div>
         </div>
