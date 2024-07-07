@@ -1,4 +1,4 @@
-export function ProjectCard({ title, year, description, image, buttonText }) {
+export function ProjectCard({ title, year, description, image, buttonText, caseLink }) {
     return (
         <div className="flex justify-between gap-4 bg-zinc-900 border border-card px-24 py-16 rounded-xl shadow-md mb-8">
             <div className="flex flex-col justify-between">
@@ -8,9 +8,11 @@ export function ProjectCard({ title, year, description, image, buttonText }) {
                     <p className="text-gray-300 text-xl text-left w-full max-w-lg mb-4">{description}</p>
                 </div>
                 <div className="mt-auto">
-                    <button className="bg-zinc-900 border border-card font-semibold text-white font-bold py-2 px-4 rounded-lg">
-                        {buttonText}
-                    </button>
+                    <a href={caseLink} target="_blank" rel="noopener noreferrer">
+                        <button className="bg-zinc-900 border border-card font-semibold text-white font-bold py-2 px-4 rounded-lg">
+                            {buttonText}
+                        </button>
+                    </a>
                 </div>
             </div>
             <div className="">

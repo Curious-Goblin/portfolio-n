@@ -13,12 +13,14 @@ const Contact = () => {
                     Looking forward to hearing from you soon!
                 </p>
                 <div className="flex justify-center items-center space-x-4">
+                    <a href='mailto:naveen1043.me@gmail.com'>
+                        <div className="bg-black p-3 border border-card rounded-lg flex items-center space-x-2">
+                            <FaEnvelope className="text-white" />
+                            <span>naveen1043.me@gmail.com</span>
+                        </div>
+                    </a>
                     <div className="bg-black p-3 border border-card rounded-lg flex items-center space-x-2">
-                        <FaEnvelope className="text-white" />
-                        <span>naveen1043.me@gmail.com</span>
-                    </div>
-                    <div className="bg-black p-3 border border-card rounded-lg flex items-center space-x-2">
-                        <FaLinkedin className="text-2xl text-white cursor-pointer" />
+                        <a href='https://www.linkedin.com/in/naveen-prajapati-bb538425b/' target="_blank" rel="noopener noreferrer"><FaLinkedin className="text-2xl text-white cursor-pointer" /></a>
                     </div>
                     <div className="bg-black p-3 border border-card rounded-lg flex items-center space-x-2">
                         <FaTwitter className="text-2xl text-white cursor-pointer" />

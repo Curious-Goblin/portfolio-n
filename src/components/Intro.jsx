@@ -1,5 +1,5 @@
 const handleDownloadResume = () => {
-  const url = 'https://drive.google.com/uc?export=download&id=1mlqVIwWCgT4ktylVeVZAwad7h8NuY3zG'; // Replace YOUR_FILE_ID with the actual file ID from Google Drive
+  const url = 'https://drive.google.com/uc?export=download&id=1lYeu97qx4Fx2DFh8-OOg3NPNHZlIZccJ'; // Replace YOUR_FILE_ID with the actual file ID from Google Drive
   const a = document.createElement('a');
   a.style.display = 'none';
   a.href = url;
