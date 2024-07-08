@@ -1,15 +1,19 @@
 import { ProjectCard } from './ProjectCard';
 
-function Work() {
+// src/WorkSection.js
+import React from 'react';
+
+const Work = () => {
   return (
-    <div id='work' className="w-full text-left mx-auto px-36 bg-black">
-      <h1 className="text-6xl font-bold text-white mb-12">
+    <div id="work" className="w-full text-left mx-auto px-8 md:px-20 lg:px-36 pt-28 md:pt-24 lg:pt-36 bg-black">
+      <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 md:mb-8 lg:mb-12">
         My Work
       </h1>
-      <p className="text-gray-400 text-xl w-full max-w-4xl mb-20">
+      <p className="text-gray-400 text-base md:text-lg lg:text-xl w-full max-w-2xl md:max-w-3xl lg:max-w-4xl mb-10 md:mb-14 lg:mb-20">
         Here's a glimpse of some of my recent and exciting projects. Each of them reflects my
         focus on user-centered design and my commitment to excellence in user experience.
       </p>
+
       <ProjectCard
         title="AI Website"
         year="2024 - User Interface Design"
@@ -39,6 +43,7 @@ function Work() {
       </div>
     </div>
   );
-}
+};
 
 export default Work;
+
