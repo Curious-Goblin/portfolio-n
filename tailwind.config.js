@@ -6,10 +6,14 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],  // Set Inter as the default sans font
+      },
       colors: {
         customBg: '#3B3B3B',
         textColor: '#B3B3B3',
-        card: '#3B3B3B'
+        card: '#3B3B3B',
+        workColor:'#121212'
       }
     },
   },

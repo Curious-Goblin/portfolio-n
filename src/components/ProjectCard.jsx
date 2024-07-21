@@ -8,16 +8,16 @@ export function ProjectCard({ title, year, description, image, buttonText, caseL
     return (
         <div>
             <div className="hidden lg:block ">
-                <div className="flex justify-between gap-4 bg-zinc-900 border border-card px-24 py-16 rounded-xl shadow-md mb-8">
+                <div className="flex justify-between gap-4 bg-workColor border border-card px-16 py-16 rounded-3xl shadow-md mb-10">
                     <div className="flex flex-col justify-between">
                         <div>
-                            <h2 className="text-3xl font-bold text-white mb-4">{title}</h2>
-                            <p className="text-white mb-8">{year}</p>
-                            <p className="text-gray-300 text-xl text-left w-full max-w-lg mb-4">{description}</p>
+                            <h2 className="text-3xl font-bold text-white mb-6">{title}</h2>
+                            <p className="text-white mb-6">{year}</p>
+                            <p className="text-textColor text-xl text-left w-full max-w-lg mb-4">{description}</p>
                         </div>
-                        <div className="mt-auto">
+                        <div className="mb-10">
                             <a href={caseLink} target="_blank" rel="noopener noreferrer">
-                                <button className="bg-zinc-900 border border-card font-semibold text-white font-bold py-2 px-4 rounded-lg">
+                                <button className="bg-workColor border border-white font-semibold text-white py-3 px-4 rounded-lg">
                                     {buttonText}
                                 </button>
                             </a>

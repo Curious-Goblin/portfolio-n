@@ -1,7 +1,6 @@
-// Experience.js
-
 const experiences = [
   {
+    index: 1,
     title: "UI/UX Designer at Zidio Development",
     duration: "Jun 2024 - Present",
     description: [
@@ -11,6 +10,7 @@ const experiences = [
     logo: "https://res.cloudinary.com/dgp2hrhld/image/upload/v1720356381/e1_ha2cse.png"
   },
   {
+    index: 2,
     title: "Web Designer at DeepShape",
     duration: "Dec 2023 - Jan 2024",
     description: [
@@ -18,8 +18,10 @@ const experiences = [
       "Created and component sets to streamline the design process."
     ],
     logo: "https://res.cloudinary.com/dgp2hrhld/image/upload/v1720356987/deep_ouyw6l.png"
+
   },
   {
+    index: 3,
     title: "UI Designer at Quant Brain",
     duration: "Feb 2024 - Mar 2024",
     description: [
@@ -29,6 +31,7 @@ const experiences = [
     logo: "https://res.cloudinary.com/dgp2hrhld/image/upload/v1720356409/e2_wfqyef.png"
   },
   {
+    index: 4,
     title: "UI/UX Designer at CodeWars",
     duration: "Jun 2023 - Aug 2023",
     description: [
@@ -43,22 +46,44 @@ const Experience = () => {
     <div>
       <div id="experience" className="hidden md:block w-full text-white text-left mx-auto px-36 pt-36 bg-black">
         <h2 className="text-6xl font-bold mb-24">Experience</h2>
-        {experiences.map((experience, index) => (
-          <div key={index} className="rounded-lg mb-16">
+        {experiences.map((experience) => (
+          <div key={experience.index} className="mb-16">
             <div className="flex justify-between items-center mb-4">
-              <div className="flex items-center">
-                <img
-                  src={experience.logo}
-                  alt={`${experience.title} logo`}
-                  className="w-12 h-12 mr-4"
-                />
-                <h3 className="text-2xl font-semibold">{experience.title}</h3>
+              <div className="flex justify-center items-center">
+                {experience.index == 1 &&
+                  <img
+                    src={experience.logo}
+                    alt={`${experience.title} logo`}
+                    className="w-16 h-12 mr-4"
+                  />}
+                  {experience.index == 2 &&
+                  <img
+                    src={experience.logo}
+                    alt={`${experience.title} logo`}
+                    className="w-10 h-10 mr-4"
+                  />}
+                  {experience.index == 3 &&
+                  <img
+                    src={experience.logo}
+                    alt={`${experience.title} logo`}
+                    className="w-16 h-16"
+                  />}
+                  {experience.index == 4 &&
+                  <img
+                    src={experience.logo}
+                    alt={`${experience.title} logo`}
+                    className="w-10 h-10 mr-4"
+                  />}
+                <h3 className="text-4xl font-semibold">{experience.title}</h3>
               </div>
-              <span className="text-gray-400">{experience.duration}</span>
+              <span className="text-white font-medium">{experience.duration}</span>
             </div>
-            <ul className="list-disc list-inside pl-5 space-y-2 text-gray-400 text-xl">
+            <ul className="pl-5 space-y-2 text-gray-400 text-xl">
               {experience.description.map((desc, idx) => (
-                <li key={idx}>{desc}</li>
+                <li key={idx} className="flex">
+                  <div className="mr-2">•</div>
+                  <div>{desc}</div>
+                </li>
               ))}
             </ul>
           </div>
@@ -79,9 +104,12 @@ const Experience = () => {
               </div>
               <span className="">{experience.duration}</span>
             </div>
-            <ul className="list-disc list-inside space-y-2 text-gray-400 text-xl">
+            <ul className="space-y-2 text-textColor text-xl">
               {experience.description.map((desc, idx) => (
-                <li key={idx}>{desc}</li>
+                <li key={idx} className="flex">
+                  <div className="mr-2">•</div>
+                  <div>{desc}</div>
+                </li>
               ))}
             </ul>
           </div>

@@ -24,7 +24,7 @@ const ScrollDown = () => {
             <div className="grid-pattern absolute inset-0"></div>
             <div className="flex flex-col items-center relative">
                 <div className={`${isHide ? 'hidden' : 'mouse-icon'}`}>
-                    <div className="mouse-wheel animate-scroll"></div>
+                    <div className="mouse-wheel animate-scroll mb-10"></div>
                 </div>
             </div>
         </div>
