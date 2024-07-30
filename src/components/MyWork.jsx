@@ -6,7 +6,7 @@ import React, { useState } from 'react';
 const Work = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div id="work" className="w-full text-left mx-auto px-10 md:px-20 lg:px-36 pt-28 md:pt-24 lg:pt-36">
+    <div id="work" className="w-full text-left mx-auto px-10 md:px-20 lg:px-36 pt-36 md:pt-24 lg:pt-36">
       <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 md:mb-8 lg:mb-9">
         My Work
       </h1>

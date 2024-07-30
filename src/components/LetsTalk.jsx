@@ -77,7 +77,7 @@ const Contact = () => {
                         </a>
                     </div>
                 </div>
-                <div className='text-gray-400 pt-36'>
+                <div className='text-gray-400 pt-28 pb-2'>
                     © 2024 Copy Right
                 </div>
             </div>
