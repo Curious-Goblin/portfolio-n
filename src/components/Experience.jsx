@@ -66,7 +66,7 @@ const Experience = () => {
                   <img
                     src={experience.logo}
                     alt={`${experience.title} logo`}
-                    className="w-14 h-10 mr-10"
+                    className="w-14 h-10 mr-6"
                   />}
                 {experience.index == 4 &&
                   <img
@@ -89,17 +89,36 @@ const Experience = () => {
           </div>
         ))}
       </div>
-      <div id="experience" className="md:hidden w-full text-white text-left mx-auto px-8 pt-36 bg-black">
+      <div id="experience" className="md:hidden w-full text-white text-left mx-auto px-10 pt-36">
         <h2 className="text-3xl font-bold mb-12">Experience</h2>
         {experiences.map((experience, index) => (
           <div key={index} className="rounded-lg mb-16">
             <div className=" justify-between items-center mb-4">
               <div className="flex items-center mb-4">
-                <img
-                  src={experience.logo}
-                  alt={`${experience.title} logo`}
-                  className="w-12 h-12 mr-4"
-                />
+              {experience.index == 1 &&
+                  <img
+                    src={experience.logo}
+                    alt={`${experience.title} logo`}
+                    className="w-14 h-10 mr-4"
+                  />}
+                {experience.index == 2 &&
+                  <img
+                    src={experience.logo}
+                    alt={`${experience.title} logo`}
+                    className="w-10 h-8 mr-4"
+                  />}
+                {experience.index == 3 &&
+                  <img
+                    src={experience.logo}
+                    alt={`${experience.title} logo`}
+                    className="w-12 h-8 mr-4"
+                  />}
+                {experience.index == 4 &&
+                  <img
+                    src={experience.logo}
+                    alt={`${experience.title} logo`}
+                    className="w-7 h-7 mr-4"
+                  />}
                 <h3 className="text-xl font-semibold">{experience.title}</h3>
               </div>
               <span className="">{experience.duration}</span>

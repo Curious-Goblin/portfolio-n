@@ -16,26 +16,32 @@ const Intro = () => {
   return (
     <div className="w-full mx-auto px-4 pt-36 pb-28 text-center text-white">
       <div className="hidden md:mt-28 md:p-4 md:pb-2 md:block text-4xl md:text-5xl lg:text-8xl font-bold gradient-about">Hi, I'm Naveen Prajapati</div>
-      <h1 className="md:hidden text-4xl md:text-5xl lg:text-7xl font-bold mb-2 gradient-about p-4">Hi, I'm <br></br> Naveen Prajapati</h1>
-      <h2 className="text-3xl md:text-4xl lg:text-4xl md:font-medium mb-8 md:mb-5 gradient-about md:pb-4">UI/UX Designer</h2>
-      <p className="leading-relaxed text-3xl text-center mb-12 text-textColor w-full max-w-5xl mx-auto">
+      <h1 className="md:hidden text-4xl md:text-5xl lg:text-7xl font-bold gradient-about p-4 pb-2">Hi, I'm <br></br> Naveen Prajapati</h1>
+      <h2 className="text-xl md:text-4xl lg:text-4xl md:font-medium mb-8 md:mb-5 gradient-about md:pb-4">UI/UX Designer</h2>
+      <p className="hidden md:block leading-relaxed text-3xl text-center mb-12 text-textColor w-full max-w-5xl mx-auto">
         My self Naveen Prajapati. I am a Passionate UI/UX Designer.<br />
         Proficient in creating visually stunning designs that prioritize user<br />
         satisfaction and engagement. Efficacious problem-solver with a <br />
         keen eye for detail.
       </p>
+      <p className="md:hidden leading-relaxed text-lg text-center mb-20 text-textColor w-full px-12 mx-auto">
+        My self Naveen Prajapati. I am a Passionate UI/UX Designer.
+        Proficient in creating visually stunning designs that prioritize user
+        satisfaction and engagement. Efficacious problem-solver with a
+        keen eye for detail.
+      </p>
       <div>
-        <div className="flex justify-center gap-10">
+        <div className="flex justify-center gap-6 md:gap-10 px-12 md:px-0">
           <a href="mailto:naveen1043.me@gmail.com">
-            <button className="bg-white font-extrabold text-xl text-bgColor px-6 py-3 rounded-lg transform transition-transform hover:scale-105">
+            <button className="bg-white md:font-extrabold font-semibold text-sm md:text-xl text-bgColor px-3 md:px-6 py-3 rounded-lg transform transition-transform hover:scale-105">
               Get in Touch
             </button>
           </a>
-          <button onClick={handleDownloadResume} className="bg-bgColor text-xl text-white px-6 py-3 font-extrabold border rounded-lg border-white transform transition-transform hover:scale-105">
+          <button onClick={handleDownloadResume} className="bg-bgColor text-sm md:text-xl text-white px-3 md:px-6 py-3 md:font-extrabold font-bold border rounded-lg border-white transform transition-transform hover:scale-105">
             Download CV
           </button>
         </div>
-        <div className="flex justify-center items-center space-x-14 pt-20">
+        <div className="hidden md:flex justify-center items-center space-x-14 pt-20">
           <a href='https://www.linkedin.com/in/naveen-prajapati-bb538425b/' target="_blank" rel="noopener noreferrer">
             <svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="1.03992" y="0.539916" width="50.7521" height="50.7521" rx="8.09874" fill="#0A0A0A" />

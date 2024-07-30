@@ -36,13 +36,13 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div className="md:hidden w-full text-white text-left mx-auto px-8 pt-16 bg-black">
-        <h2 className="text-3xl font-bold mb-12">My skills</h2>
+      <div className="md:hidden w-full text-white text-left mx-auto px-10 pt-16">
+        <h2 className="text-3xl font-bold mb-6">Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-6 text-xl">
           {skills.map((skill, index) => (
             <div key={index} className="flex items-center">
               <span className="text-purple-500 mr-2">•</span>
-              <span>{skill}</span>
+              <span className="text-md text-textColor">{skill}</span>
             </div>
           ))}
         </div>

@@ -27,9 +27,9 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div id="about" className="md:hidden w-full text-white text-left mx-auto pt-36 bg-black">
+      <div id="about" className="md:hidden w-full text-white text-left mx-auto pt-20">
         <div className="flex flex-col">
-          <div className="flex flex-col items-center mb-16">
+          <div className="flex flex-col items-center mb-10">
             <img
               src="https://res.cloudinary.com/dgp2hrhld/image/upload/v1720355827/Group_1948754640_ibfuva.png"
               alt="Profile"
@@ -37,7 +37,7 @@ const AboutMe = () => {
               style={{ width: '25%', height: '25%' }}
             />
           </div>
-          <div className="px-8">
+          <div className="px-10">
             <h1 className="text-3xl font-bold text-white mb-8">About Me</h1>
             <p className="text-xl font-light text-white mb-8 max-w-fit w-full">
               With over 2 years of experience in digital product design, I'm passionate about creating engaging and functional solutions that meet users' needs. My focus on user research and usability ensures that each design not only looks great but also delivers an exceptional experience.

@@ -49,10 +49,10 @@ const Contact = () => {
                     © 2024 Copy Right
                 </div>
             </div>
-            <div id='contact' className="md:hidden w-full text-white text-center p-16 pt-44">
-                <div className='rounded-2xl px-8 py-16'>
+            <div id='contact' className="md:hidden w-full text-white text-center pt-36">
+                <div className='rounded-2xl px-10 py-16'>
                     <h2 className="text-3xl font-bold mb-8">Let's Talk!</h2>
-                    <p className="text-xl text-gray-400 mb-12 w-full max-w-2xl mx-auto">
+                    <p className="text-xl text-gray-400 mb-12 w-full">
                         Interested in working together or have a question? Feel free to reach out.
                         I'm here to help you turn your ideas into amazing digital realities.
                         Looking forward to hearing from you soon!

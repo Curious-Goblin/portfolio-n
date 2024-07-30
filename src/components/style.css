@@ -35,21 +35,21 @@
 
 /* Mouse Icon */
 .mouse-icon {
-  width: 35px;
-  height: 55px;
+  width: 25px;
+  height: 45px;
   border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 24px;
   position: relative;
 }
 
 .mouse-wheel {
-  width: 8px;
-  height: 12px;
+  width: 6px;
+  height: 10px;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 4px;
   position: absolute;
-  top: 16px;
-  left: 40%;
+  top: 12px;
+  left: 35%;
   transform: translateX(-50%);
 }
 
