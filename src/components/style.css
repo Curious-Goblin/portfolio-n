@@ -40,6 +40,7 @@
   border: 2px solid rgba(255, 255, 255, 0.7);
   border-radius: 24px;
   position: relative;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .mouse-wheel {
@@ -52,6 +53,16 @@
   left: 35%;
   transform: translateX(-50%);
 }
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
 
 @keyframes scroll {
   0%, 100% {

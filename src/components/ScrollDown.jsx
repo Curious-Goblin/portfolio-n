@@ -23,10 +23,10 @@ const ScrollDown = () => {
         <div className="flex flex-col items-center justify-center relative">
             <div className="grid-pattern absolute inset-0"></div>
             <div className="flex flex-col items-center relative">
-                <div className={`${isHide ? 'hidden' : 'mouse-icon'}`}>
+                <div className={`mouse-icon ${isHide ? 'fade-out' : 'fade-in'}`}>
                     <div className="mouse-wheel animate-scroll mb-10"></div>
                 </div>
-                <div className={`pt-3 text-sm text-textColor ${isHide ? 'hidden' : ''}`}>Scroll Down</div>
+                <div className={`pt-3 text-sm text-textColor ${isHide ? 'fade-out' : 'fade-in'}`}>Scroll Down</div>
             </div>
         </div>
     );
