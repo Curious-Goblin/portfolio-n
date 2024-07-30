@@ -6,12 +6,12 @@ const AboutMe = () => {
           <div className="text-6xl font-bold text-white mb-20">About Me</div>
           <div className="flex justify-between w-full">
             <div>
-              <p className="text-4xl leading-relaxed font-light text-white max-w-fit pr-16">
-                With over 2 years of experience in digital product<br />
-                design, I'm passionate about creating engaging and<br />
-                functional solutions that meet users' needs. My focus<br />
-                on user research and usability ensures that each<br />
-                design not only looks great but also delivers an<br />
+              <p className="text-4xl leading-relaxed font-light text-white max-w-5xl pr-16">
+                With over 2 years of experience in digital product
+                design, I'm passionate about creating engaging and
+                functional solutions that meet users' needs. My focus
+                on user research and usability ensures that each
+                design not only looks great but also delivers an
                 exceptional experience.
               </p>
             </div>
