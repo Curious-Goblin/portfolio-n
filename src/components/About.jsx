@@ -4,9 +4,9 @@ const AboutMe = () => {
       <div id="about" className="hidden md:block w-full text-white text-left mx-auto pt-36 md:px-36">
         <div className="flex flex-col md:items-start">
           <div className="text-6xl font-bold text-white mb-20">About Me</div>
-          <div className="flex justify-between gap-12 w-full">
+          <div className="flex justify-between w-full">
             <div>
-              <p className="text-4xl leading-relaxed font-light text-white max-w-fit">
+              <p className="text-4xl leading-relaxed font-light text-white max-w-fit pr-16">
                 With over 2 years of experience in digital product<br />
                 design, I'm passionate about creating engaging and<br />
                 functional solutions that meet users' needs. My focus<br />
