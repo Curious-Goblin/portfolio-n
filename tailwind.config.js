@@ -13,7 +13,8 @@ export default {
         customBg: '#3B3B3B',
         textColor: '#B3B3B3',
         card: '#3B3B3B',
-        workColor:'#121212'
+        workColor:'#121212',
+        bgColor:'#0A0A0A'
       }
     },
   },

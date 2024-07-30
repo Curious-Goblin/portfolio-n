@@ -33,7 +33,7 @@ export function Navbar() {
   };
 
   return (
-    <div className="fixed z-50 md:pt-20 md:pb-6 w-screen bg-black flex items-center justify-center h-fit transition-all duration-500 ease-in-out">
+    <div className="fixed z-50 md:pt-20 md:pb-6 w-screen flex items-center justify-center h-fit transition-all duration-500 ease-in-out bg-bgColor">
       <div className="px-4 md:px-8 flex justify-between items-center mx-auto">
         <div className="hidden md:flex gap-2 md:gap-6 lg:gap-8 items-center justify-center text-stone-200 z-10 text-lg transition-all duration-500 ease-in-out">
           <a href="#experience">

@@ -28,7 +28,7 @@ const experiences = [
       "Quant Brain is an AI Trading Application. Designed the landing page UI from scratch.",
       "Incorporating modern design & user-centric approaches. Developed a comprehensive style guide, Created mobile interface as well."
     ],
-    logo: "https://res.cloudinary.com/dgp2hrhld/image/upload/v1720356409/e2_wfqyef.png"
+    logo: "https://res.cloudinary.com/dgp2hrhld/image/upload/c_crop,w_300,h_300,ar_1:1/v1720356409/e2_wfqyef.png"
   },
   {
     index: 4,
@@ -44,7 +44,7 @@ const experiences = [
 const Experience = () => {
   return (
     <div>
-      <div id="experience" className="hidden md:block w-full text-white text-left mx-auto px-36 pt-36 bg-black">
+      <div id="experience" className="hidden md:block w-full text-white text-left mx-auto px-36 pt-36">
         <h2 className="text-6xl font-bold mb-24">Experience</h2>
         {experiences.map((experience) => (
           <div key={experience.index} className="mb-16">
@@ -56,23 +56,23 @@ const Experience = () => {
                     alt={`${experience.title} logo`}
                     className="w-16 h-12 mr-4"
                   />}
-                  {experience.index == 2 &&
+                {experience.index == 2 &&
                   <img
                     src={experience.logo}
                     alt={`${experience.title} logo`}
-                    className="w-10 h-10 mr-4"
+                    className="w-10 h-10 mr-10"
                   />}
-                  {experience.index == 3 &&
+                {experience.index == 3 &&
                   <img
                     src={experience.logo}
                     alt={`${experience.title} logo`}
-                    className="w-16 h-16"
+                    className="w-14 h-10 mr-10"
                   />}
-                  {experience.index == 4 &&
+                {experience.index == 4 &&
                   <img
                     src={experience.logo}
                     alt={`${experience.title} logo`}
-                    className="w-10 h-10 mr-4"
+                    className="w-10 h-10 mr-10"
                   />}
                 <h3 className="text-4xl font-semibold">{experience.title}</h3>
               </div>

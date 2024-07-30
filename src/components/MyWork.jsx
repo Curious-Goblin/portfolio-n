@@ -6,11 +6,11 @@ import React, { useState } from 'react';
 const Work = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div id="work" className="w-full text-left mx-auto px-8 md:px-20 lg:px-36 pt-28 md:pt-24 lg:pt-36 bg-black">
+    <div id="work" className="w-full text-left mx-auto px-8 md:px-20 lg:px-36 pt-28 md:pt-24 lg:pt-36">
       <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 md:mb-8 lg:mb-9">
         My Work
       </h1>
-      <p className="text-gray-400 text-base md:text-lg lg:text-xl w-full max-w-2xl md:max-w-3xl lg:max-w-5xl mr-10 mb-10 md:mb-14 lg:mb-16">
+      <p className="text-textColor text-base md:text-lg lg:text-xl w-full max-w-2xl md:max-w-3xl lg:max-w-5xl mr-10 mb-10 md:mb-14 lg:mb-16">
         Here's a glimpse of some of my recent and exciting projects. Each of them reflects my<br />
         focus on user-centered design and my commitment to excellence in user experience.
       </p>

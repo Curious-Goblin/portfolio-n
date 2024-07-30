@@ -10,7 +10,7 @@ import Skills from "./components/Skills"
 function App() {
 
   return (
-    <div className="bg-black font-sans">
+    <div className="bg-bgColor font-sans">
       {/* <Navbar/> */}
       <Navbar/>
       <Intro/>

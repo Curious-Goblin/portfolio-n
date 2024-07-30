@@ -20,7 +20,7 @@ const Skills = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-36 gap-y-6 w-full max-w-fit text-2xl text-textColor">
           <div>
             {firstColumnSkills.map((skill, index) => (
-              <div key={index} className="flex items-center p-4">
+              <div key={index} className="flex items-center p-4 pl-2">
                 <span className="text-purple-500 mr-2 flex items-center">•</span>
                 <span>{skill}</span>
               </div>
