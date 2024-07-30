@@ -1,12 +1,10 @@
-// AboutMe.js
-
 const AboutMe = () => {
   return (
     <div>
       <div id="about" className="hidden md:block w-full text-white text-left mx-auto pt-36 md:px-36">
         <div className="flex flex-col md:items-start">
           <div className="text-6xl font-bold text-white mb-20">About Me</div>
-          <div className="flex justify-between w-full">
+          <div className="flex justify-between gap-12 w-full">
             <div>
               <p className="text-4xl leading-relaxed font-light text-white max-w-6xl">
                 With over 2 years of experience in digital product<br />
