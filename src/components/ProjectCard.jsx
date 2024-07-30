@@ -9,11 +9,10 @@ export function ProjectCard({ title, year, description, image, buttonText, caseL
 
     return (
         <div>
-            {/* Desktop View */}
             <div className="hidden lg:block">
                 <div className="flex justify-between gap-4 bg-workColor border border-card px-16 py-16 rounded-3xl shadow-md mb-10">
                     <div className="flex flex-col justify-between">
-                        <div>
+                        <div className="mr-10">
                             <h2 className="text-3xl font-bold text-white mb-6">{title}</h2>
                             <p className="text-white mb-6">{year}</p>
                             <p className="text-textColor text-xl text-left w-full max-w-lg mb-4">{description}</p>
@@ -32,7 +31,6 @@ export function ProjectCard({ title, year, description, image, buttonText, caseL
                 </div>
             </div>
 
-            {/* Mobile View */}
             <div className="lg:hidden w-full bg-zinc-900 border border-card px-6 py-6 rounded-xl shadow-md mb-8">
                 <div className="flex items-center justify-center">
                     <img src={image} alt={title} style={{ width: '99%', height: '80%' }} className=" border-card rounded-lg shadow-md" />
