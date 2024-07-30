@@ -160,7 +160,7 @@ export function Navbar() {
                 </div>
               </a>
               <a href="#contact" className="z-10" onClick={() => handleButtonClick('contact')}>
-                <div className={`inline-block px-3 py-2 gradient-text ${activeButton === 'contact' ? 'border-gray-700 border px-3 py-2 rounded-lg' : ''}`}>
+                <div className={`inline-block gradient-text px-3 py-2 ${activeButton === 'contact' ? 'border-gray-700 border px-3 py-2 rounded-lg' : ''}`}>
                   Contact
                 </div>
               </a>
