@@ -25,9 +25,9 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div id="about-1" className="md:hidden w-full text-white text-left mx-auto pt-20">
+      <div id="about-1" className="md:hidden w-full text-white text-left mx-auto pt-28">
         <div className="flex flex-col">
-          <div className="flex flex-col items-center mb-10">
+          <div className="flex flex-col items-center">
             <img
               src="https://res.cloudinary.com/dgp2hrhld/image/upload/v1720355827/Group_1948754640_ibfuva.png"
               alt="Profile"

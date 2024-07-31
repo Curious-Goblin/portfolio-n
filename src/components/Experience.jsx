@@ -90,7 +90,7 @@ const Experience = () => {
         ))}
       </div>
       <div id="experience-1" className="md:hidden w-full text-white text-left mx-auto px-10 pt-36">
-        <h2 className="text-3xl font-bold mb-12">Experience</h2>
+        <h2 className="text-3xl font-bold mb-7">Experience</h2>
         {experiences.map((experience, index) => (
           <div key={index} className="rounded-lg mb-16">
             <div className=" justify-between items-center mb-4">
