@@ -25,7 +25,7 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-      <div id="about" className="md:hidden w-full text-white text-left mx-auto pt-20">
+      <div id="about-1" className="md:hidden w-full text-white text-left mx-auto pt-20">
         <div className="flex flex-col">
           <div className="flex flex-col items-center mb-10">
             <img

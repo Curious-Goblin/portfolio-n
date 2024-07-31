@@ -17,7 +17,7 @@ export function Navbar() {
   const handleButtonClick = (buttonName) => {
     setActiveButton(buttonName);
     if (isMobile) {
-      setIsOpen(false); // Close the menu when a button is clicked on mobile
+      setIsOpen(false);
     }
   };
 
@@ -117,7 +117,7 @@ export function Navbar() {
             </div>
           </a>
         </div>
-        <div className="md:hidden h-36 flex items-end justify-end w-full p-4">
+        <div className="md:hidden h-28 flex items-end justify-end w-full p-4">
           <button onClick={handleOpen} aria-label="Toggle menu" className="mb-4">
             {isOpen ? (
               <svg width="38" height="29" viewBox="0 0 38 29" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -144,23 +144,31 @@ export function Navbar() {
               exit="closed"
               variants={menuVariants}
             >
-              <a href="#work" className="z-10" onClick={() => handleButtonClick('work')}>
-                <div className={`inline-block text-white px-3 py-2 ${activeButton === 'work' ? 'border-gray-700 border px-3 py-2 rounded-lg' : ''}`}>
+              <a href="#work" className="z-10">
+                <div
+                  onClick={() => handleButtonClick('work')}
+                  className={`inline-block text-white px-3 py-2 ${activeButton === 'work' ? 'border-gray-700 border px-3 py-2 rounded-lg' : ''}`}>
                   Work
                 </div>
               </a>
-              <a href="#about" className="z-10" onClick={() => handleButtonClick('about')}>
-                <div className={`inline-block text-white px-3 py-2 ${activeButton === 'about' ? 'border-gray-700 border px-3 py-2 rounded-lg' : ''}`}>
+              <a href="#about-1" className="z-10" >
+                <div
+                  onClick={() => handleButtonClick('about-1')}
+                  className={`inline-block text-white px-3 py-2 ${activeButton === 'about-1' ? 'border-gray-700 border px-3 py-2 rounded-lg' : ''}`}>
                   About
                 </div>
               </a>
-              <a href="#experience" className="z-10" onClick={() => handleButtonClick('experience')}>
-                <div className={`inline-block text-white px-3 py-2 ${activeButton === 'experience' ? 'border-gray-700 border px-3 py-2 rounded-lg' : ''}`}>
+              <a href="#experience-1" className="z-10" >
+                <div
+                  onClick={() => handleButtonClick('experience-1')}
+                  className={`inline-block text-white px-3 py-2 ${activeButton === 'experience-1' ? 'border-gray-700 border px-3 py-2 rounded-lg' : ''}`}>
                   Projects
                 </div>
               </a>
-              <a href="#contact" className="z-10" onClick={() => handleButtonClick('contact')}>
-                <div className={`inline-block gradient-text px-3 py-2 ${activeButton === 'contact' ? 'border-gray-700 border px-3 py-2 rounded-lg' : ''}`}>
+              <a href="#contact-1" className="z-10" >
+                <div
+                  onClick={() => handleButtonClick('contact-1')}
+                  className={`inline-block gradient-text px-3 py-2 ${activeButton === 'contact-1' ? 'border-gray-700 border px-3 py-2 rounded-lg' : ''}`}>
                   Contact
                 </div>
               </a>

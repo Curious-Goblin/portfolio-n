@@ -14,7 +14,7 @@ const handleDownloadResume = () => {
 
 const Intro = () => {
   return (
-    <div className="w-full mx-auto px-4 pt-36 pb-28 text-center text-white">
+    <div className="w-full mx-auto px-4 pt-36 pb-24 md:pb-28 text-center text-white">
       <div className="hidden md:mt-28 md:p-4 md:pb-2 md:block text-4xl md:text-5xl lg:text-8xl font-bold gradient-about">Hi, I'm Naveen Prajapati</div>
       <h1 className="md:hidden text-4xl md:text-5xl lg:text-7xl font-bold gradient-about p-4 pb-2">Hi, I'm <br></br> Naveen Prajapati</h1>
       <h2 className="text-xl md:text-4xl lg:text-4xl md:font-medium mb-8 md:mb-5 gradient-about md:pb-4">UI/UX Designer</h2>

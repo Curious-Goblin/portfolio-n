@@ -49,7 +49,7 @@ const Contact = () => {
                     © 2024 Copy Right
                 </div>
             </div>
-            <div id='contact' className="md:hidden w-full text-white text-center pt-36">
+            <div id='contact-1' className="md:hidden w-full text-white text-center pt-36">
                 <div className='rounded-2xl py-16'>
                     <h2 className="text-3xl font-bold mb-8">Let's Talk!</h2>
                     <p className="text-xl text-gray-400 mb-12 w-full px-16">
