@@ -28,7 +28,7 @@ const experiences = [
       "Quant Brain is an AI Trading Application. Designed the landing page UI from scratch.",
       "Incorporating modern design & user-centric approaches. Developed a comprehensive style guide, Created mobile interface as well."
     ],
-    logo: "https://res.cloudinary.com/dgp2hrhld/image/upload/c_crop,w_300,h_300,ar_1:1/v1720356409/e2_wfqyef.png"
+    logo: "https://res.cloudinary.com/dgp2hrhld/image/upload/c_crop,w_225,h_280/v1720356409/e2_wfqyef.png"
   },
   {
     index: 4,
@@ -66,13 +66,13 @@ const Experience = () => {
                   <img
                     src={experience.logo}
                     alt={`${experience.title} logo`}
-                    className="w-14 h-10 mr-6"
+                    className="w-12 h-10 mr-6"
                   />}
                 {experience.index == 4 &&
                   <img
                     src={experience.logo}
                     alt={`${experience.title} logo`}
-                    className="w-10 h-10 mr-10"
+                    className="w-10 h-10 mr-8"
                   />}
                 <h3 className="text-4xl font-semibold">{experience.title}</h3>
               </div>
@@ -123,7 +123,7 @@ const Experience = () => {
               </div>
               <span className="">{experience.duration}</span>
             </div>
-            <ul className="space-y-2 text-textColor text-xl">
+            <ul className="space-y-2 text-textColor text-lg">
               {experience.description.map((desc, idx) => (
                 <li key={idx} className="flex">
                   <div className="mr-2">•</div>

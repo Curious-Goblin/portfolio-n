@@ -52,7 +52,7 @@ export function ProjectCard({ title, year, description, image, buttonText, caseL
                 <div
                     className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-screen' : 'max-h-0'}`}
                 >
-                    <p className="text-gray-300 text-lg text-left w-full pt-4">
+                    <p className="text-gray-300 text-sm text-left w-full pt-4">
                         {description}
                     </p>
                 </div>
