@@ -3,10 +3,10 @@ const AboutMe = () => {
     <div>
       <div id="about" className="hidden md:block w-full text-white text-left mx-auto pt-36 md:px-36">
         <div className="flex flex-col md:items-start">
-          <div className="text-6xl font-bold text-white mb-20">About Me</div>
+          <div className="text-4xl font-bold text-white mb-20">About Me</div>
           <div className="flex justify-between w-full">
             <div>
-              <p className="text-4xl leading-relaxed font-light text-white max-w-5xl pr-16">
+              <p className="text-3xl leading-relaxed font-light text-white max-w-5xl pr-16">
                 With over 2 years of experience in digital product
                 design, I'm passionate about creating engaging and
                 functional solutions that meet users' needs. My focus
@@ -19,7 +19,7 @@ const AboutMe = () => {
               <img
                 src="https://res.cloudinary.com/dgp2hrhld/image/upload/v1720355827/Group_1948754640_ibfuva.png"
                 alt="Profile"
-                style={{ width: '340px', height: '450px' }}
+                style={{ width: '85%', height: '95%' }}
               />
             </div>
           </div>

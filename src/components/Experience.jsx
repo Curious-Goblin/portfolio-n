@@ -45,7 +45,7 @@ const Experience = () => {
   return (
     <div>
       <div id="experience" className="hidden md:block w-full text-white text-left mx-auto px-36 pt-36">
-        <h2 className="text-6xl font-bold mb-24">Experience</h2>
+        <h2 className="text-4xl font-bold mb-24">Experience</h2>
         {experiences.map((experience) => (
           <div key={experience.index} className="mb-16">
             <div className="flex justify-between items-center mb-4">
@@ -66,7 +66,7 @@ const Experience = () => {
                   <img
                     src={experience.logo}
                     alt={`${experience.title} logo`}
-                    className="w-12 h-10 mr-6"
+                    className="w-10 h-8 mr-6"
                   />}
                 {experience.index == 4 &&
                   <img
@@ -74,7 +74,7 @@ const Experience = () => {
                     alt={`${experience.title} logo`}
                     className="w-10 h-10 mr-8"
                   />}
-                <h3 className="text-4xl font-semibold">{experience.title}</h3>
+                <h3 className="text-2xl font-semibold">{experience.title}</h3>
               </div>
               <span className="text-white font-medium">{experience.duration}</span>
             </div>

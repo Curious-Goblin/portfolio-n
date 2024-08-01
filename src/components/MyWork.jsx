@@ -7,7 +7,7 @@ const Work = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <div id="work" className="w-full text-left mx-auto px-10 md:px-20 lg:px-36 pt-36 md:pt-24 lg:pt-36">
-      <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white mb-6 md:mb-8 lg:mb-9">
+      <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold text-white mb-6 md:mb-8 lg:mb-9">
         My Work
       </h1>
       <p className="text-textColor text-base md:text-lg lg:text-xl w-full max-w-2xl md:max-w-3xl lg:max-w-5xl mr-10 mb-10 md:mb-14 lg:mb-16">
