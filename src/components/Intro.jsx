@@ -15,13 +15,15 @@ const handleDownloadResume = () => {
 const Intro = () => {
   return (
     <div className="w-full mx-auto px-4 pt-28 pb-12 md:pb-20 2xl:pb-28 text-center text-white">
-      <div className="hidden md:mt-10 md:px-4 md:pb-2 md:block text-4xl md:text-5xl lg:text-7xl 2xl:text-7.5xl font-bold gradient-about">Hi, I'm Naveen Prajapati</div>
+      <div className="hidden md:mt-10 md:px-4 md:pb-2 md:block text-4xl md:text-5xl lg:text-7xl 2xl:text-7.5xl font-bold gradient-about">
+        Hi, I'm Naveen Prajapati
+      </div>
       <h1 className="md:hidden text-3xl md:text-5xl lg:text-7xl font-bold gradient-about p-4 pb-2">Hi, I'm <br></br> Naveen Prajapati</h1>
       <h2 className="text-xl md:text-4xl lg:text-3xl 2xl:text-4xl md:font-medium mb-8 md:mb-5 gradient-about md:pb-4">UI/UX Designer</h2>
       <p className="hidden md:block font-sansa leading-relaxed text-2xl 2xl:text-3xl text-center mb-12 text-textColor w-full max-w-3xl 2xl:max-w-4xl mx-auto">
         I am a Passionate UI/UX Designer.
         Proficient in creating visually stunning designs that prioritize user
-        satisfaction and engagement. Efficacious problem-solver with a 
+        satisfaction and engagement. Efficacious problem-solver with a
         keen eye for detail.
       </p>
       <p className="md:hidden font-sansa leading-relaxed text-md text-center mb-20 text-textColor w-full px-12 mx-auto">

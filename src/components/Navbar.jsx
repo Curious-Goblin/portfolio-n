@@ -50,12 +50,11 @@ export function Navbar() {
     const options = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.25, // Adjust this threshold as needed
+      threshold: 0.5, // Increase the threshold to ensure the section is more visible
     };
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(`Intersecting section: ${entry.target.id}, isIntersecting: ${entry.isIntersecting}`);
         if (entry.isIntersecting) {
           setActiveButton(entry.target.id);
         }
@@ -105,7 +104,7 @@ export function Navbar() {
               onClick={() => handleButtonClick('experience')}
               className={`${activeButton === 'experience' ? 'border-gray-700 border px-3 py-2 rounded-lg' : ''}`}
             >
-              Projects
+              Experience
             </div>
           </a>
           <a href="#contact">
@@ -162,7 +161,7 @@ export function Navbar() {
                 <div
                   onClick={() => handleButtonClick('experience-1')}
                   className={`inline-block text-white px-3 py-2 ${activeButton === 'experience-1' ? 'border-gray-700 border px-3 py-2 rounded-lg' : ''}`}>
-                  Projects
+                  Experience
                 </div>
               </a>
               <a href="#contact-1" className="z-10" >

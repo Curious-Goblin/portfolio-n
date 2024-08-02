@@ -13,7 +13,7 @@
 }
 
 .gradient-about {
-    background: linear-gradient(to bottom, #FFFFFF 50%, #EFEFEF 10%, #B0B6BF 90%);
+    background: linear-gradient(to bottom, #FFFFFF 10%, #B0B6BF 90%);
     -webkit-background-clip: text;
     color: transparent;
 }

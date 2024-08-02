@@ -15,7 +15,8 @@ export default {
         textColor: '#B3B3B3',
         card: '#3B3B3B',
         workColor:'#121212',
-        bgColor:'#0A0A0A'
+        bgColor:'#0A0A0A',
+        gradColor:'#B0B6BF'
       },
       fontSize: {
         '7.5xl': '5.25rem',

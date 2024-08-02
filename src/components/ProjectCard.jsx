@@ -34,9 +34,11 @@ export function ProjectCard({ title, year, description, image, buttonText, caseL
                 </div>
             </div>
             <div className="lg:hidden w-full bg-zinc-900 border border-card px-5 py-5 rounded-xl shadow-md mb-8">
-                <div className="flex items-center justify-center w-full">
-                    <img src={image} alt={title} style={{ width: '700px', height: '170px' }} className=" border-card rounded-lg shadow-md" />
-                </div>
+                <a href={caseLink} target="_blank" rel="noopener noreferrer">
+                    <div className="flex items-center justify-center w-full">
+                        <img src={image} alt={title} style={{ width: '700px', height: '170px' }} className=" border-card rounded-lg shadow-md" />
+                    </div>
+                </a>
                 <div className="flex justify-between gap-4">
                     <div className="flex flex-col justify-between pt-5">
                         <div>
