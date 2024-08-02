@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],  // Set Inter as the default sans font
+        sans: ['Inter', 'sans-serif'],
+        sansa:['DM sans','sans-serif']
       },
       colors: {
         customBg: '#3B3B3B',
@@ -15,7 +16,10 @@ export default {
         card: '#3B3B3B',
         workColor:'#121212',
         bgColor:'#0A0A0A'
-      }
+      },
+      fontSize: {
+        '7.5xl': '5.25rem',
+      },
     },
   },
   variants: {

@@ -15,17 +15,20 @@ export function ProjectCard({ title, year, description, image, buttonText, caseL
                         <div className="mr-10">
                             <h2 className="text-3xl font-bold text-white mb-6">{title}</h2>
                             <p className="text-white mb-6">{year}</p>
-                            <p className="text-textColor text-xl text-left w-full max-w-lg mb-4">{description}</p>
+                            <p className="text-textColor lg:text-sm 2xl:text-xl text-left w-full max-w-lg mb-4">{description}</p>
                         </div>
-                        <div className="mb-10">
+                        <div className="mb-8">
                             <a href={caseLink} target="_blank" rel="noopener noreferrer">
-                                <button className="bg-workColor border border-white font-semibold text-white py-3 px-4 rounded-lg">
+                                <button className="bg-workColor border border-white font-semibold text-white py-3 px-4 text-xs 2xl:text-lg rounded-lg">
                                     {buttonText}
                                 </button>
                             </a>
                         </div>
                     </div>
-                    <div>
+                    <div className="2xl:hidden">
+                        <img src={image} alt={title} style={{ width: '900px', height: '400px' }} className="border-card rounded-2xl shadow-md" />
+                    </div>
+                    <div className="hidden 2xl:block">
                         <img src={image} alt={title} style={{ width: '700px', height: '500px' }} className="border-card rounded-2xl shadow-md" />
                     </div>
                 </div>

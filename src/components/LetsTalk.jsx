@@ -6,7 +6,7 @@ const Contact = () => {
     return (
         <div>
             <div id='contact' className="hidden md:block w-full text-white text-center px-36 pt-44">
-                <div className='border border-gray-700 rounded-2xl bg-workColor py-24'>
+                <div className='border border-gray-700 rounded-2xl bg-workColor py-16 2xl:py-24'>
                     <h2 className="text-5xl font-bold mb-10">Let's Talk!</h2>
                     <p className="text-xl text-textColor mb-12 w-full max-w-2xl mx-auto">
                         Interested in working together or have a question? Feel free to reach out.

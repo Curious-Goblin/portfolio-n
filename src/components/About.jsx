@@ -4,9 +4,9 @@ const AboutMe = () => {
       <div id="about" className="hidden md:block w-full text-white text-left mx-auto pt-36 md:px-36">
         <div className="flex flex-col md:items-start">
           <div className="text-4xl font-bold text-white mb-20">About Me</div>
-          <div className="flex justify-between w-full">
+          <div className="flex gap-12 w-full">
             <div>
-              <p className="text-3xl leading-relaxed font-light text-white max-w-5xl pr-16">
+              <p className="font-sansa text-2xl 2xl:text-3xl leading-relaxed font-light text-white max-w-5xl pr-16">
                 With over 2 years of experience in digital product
                 design, I'm passionate about creating engaging and
                 functional solutions that meet users' needs. My focus
@@ -37,7 +37,7 @@ const AboutMe = () => {
           </div>
           <div className="px-10">
             <h1 className="text-3xl font-bold text-white mb-8">About Me</h1>
-            <p className="text-xl font-light text-white mb-8 max-w-fit w-full">
+            <p className="font-sansa text-xl font-light text-white mb-8 max-w-fit w-full">
               With over 2 years of experience in digital product design, I'm passionate about creating engaging and functional solutions that meet users' needs. My focus on user research and usability ensures that each design not only looks great but also delivers an exceptional experience.
             </p>
           </div>

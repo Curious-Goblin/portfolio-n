@@ -45,7 +45,7 @@ const Experience = () => {
   return (
     <div>
       <div id="experience" className="hidden md:block w-full text-white text-left mx-auto px-36 pt-36">
-        <h2 className="text-4xl font-bold mb-24">Experience</h2>
+        <h2 className="text-4xl font-bold mb-16">Experience</h2>
         {experiences.map((experience) => (
           <div key={experience.index} className="mb-16">
             <div className="flex justify-between items-center mb-4">
@@ -74,11 +74,11 @@ const Experience = () => {
                     alt={`${experience.title} logo`}
                     className="w-10 h-10 mr-8"
                   />}
-                <h3 className="text-2xl font-semibold">{experience.title}</h3>
+                <h3 className="text-xl 2xl:text-2xl font-semibold">{experience.title}</h3>
               </div>
-              <span className="text-white font-medium">{experience.duration}</span>
+              <span className="text-white font-medium text-sm 2xl:text-lg">{experience.duration}</span>
             </div>
-            <ul className="pl-5 space-y-2 text-gray-400 text-xl">
+            <ul className="pl-5 space-y-2 text-gray-400 text-lg 2xl:text-xl">
               {experience.description.map((desc, idx) => (
                 <li key={idx} className="flex">
                   <div className="mr-2">•</div>
