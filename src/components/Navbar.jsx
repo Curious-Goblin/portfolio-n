@@ -80,7 +80,7 @@ export function Navbar() {
   };
 
   return (
-    <div className={`fixed z-50 w-screen bg-bgColor ${isScrolling ? isOpen ? '' : 'transition-all duration-500 ease-in-out bg-bgColor/10 backdrop-blur-md' : ''}`}>
+    <div className={`fixed z-10 w-screen bg-bgColor ${isScrolling ? isOpen ? '' : 'transition-all duration-500 ease-in-out bg-bgColor/10 backdrop-blur-md' : ''}`}>
       <div className="flex justify-center items-center md:px-8 w-full">
         <div className="hidden md:flex gap-12 items-center justify-center h-28 2xl:h-36 text-stone-200 z-10 text-lg transition-all duration-500 ease-in-out">
           <a href="#work">

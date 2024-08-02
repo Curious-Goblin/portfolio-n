@@ -1,36 +1,37 @@
 /* style.css */
 .gradient-text {
-    background: linear-gradient(to right, #FFE074 25%, #50CAE4 35%, #9B5CFF 90%);
-    -webkit-background-clip: text;
-    color: transparent;
+  background: linear-gradient(to right, #FFE074 25%, #50CAE4 35%, #9B5CFF 90%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
+
 .gradient-text-1 {
-    background: linear-gradient(to right, #FFE074 25%, #50CAE4 35%, #9B5CFF 90%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+  background: linear-gradient(to right, #FFE074 25%, #50CAE4 35%, #9B5CFF 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .gradient-about {
-    background: linear-gradient(to bottom, #FFFFFF 10%, #B0B6BF 90%);
-    -webkit-background-clip: text;
-    color: transparent;
+  background: linear-gradient(to bottom, #FFFFFF 10%, #B0B6BF 90%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .nav-item {
-    padding: 0.75rem 1.5rem;
-    transition: border 0.3s, background-color 0.3s;
+  padding: 0.75rem 1.5rem;
+  transition: border 0.3s, background-color 0.3s;
 }
 
 .nav-item:hover {
-    border: 1px solid var(--customBg);
-    border-radius: 0.5rem;
+  border: 1px solid var(--customBg);
+  border-radius: 0.5rem;
 }
 
 .nav-item.active {
-    border: 1px solid var(--customBg);
-    border-radius: 0.5rem;
+  border: 1px solid var(--customBg);
+  border-radius: 0.5rem;
 }
 
 /* Mouse Icon */
@@ -41,7 +42,8 @@
   border-radius: 24px;
   position: relative;
   transition: opacity 0.5s ease-in-out;
-  overflow: hidden; /* Ensure inner content doesn't overflow */
+  overflow: hidden;
+  /* Ensure inner content doesn't overflow */
 }
 
 .mouse-wheel {
@@ -53,15 +55,21 @@
   top: 3px;
   left: 55%;
   transform: translateX(-50%);
-  animation: scroll 1.5s infinite ease-in-out; /* Adjust animation duration as needed */
+  animation: scroll 1.5s infinite ease-in-out;
+  /* Adjust animation duration as needed */
 }
 
 @keyframes scroll {
-  0%, 100% {
-    transform: translate(-50%, 0); /* Start at the top */
+
+  0%,
+  100% {
+    transform: translate(-50%, 0);
+    /* Start at the top */
   }
+
   50% {
-    transform: translate(-50%, 10px); /* Move down within bounds */
+    transform: translate(-50%, 10px);
+    /* Move down within bounds */
   }
 }
 
@@ -76,7 +84,16 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-
 .animate-scroll {
   animation: scroll 1.5s infinite;
+}
+
+.torch {
+  position: absolute;
+  width: 1243.41px;
+  height: 1567.6px;
+  left: calc(50% - 1243.41px/2 + 53.96px);
+  top: -648.5px;
+  background: linear-gradient(207.09deg, rgba(217, 217, 217, 0.06) 18.78%, rgba(217, 217, 217, 0.01) 90.5%);
+  filter: blur(185.59px);
 }
