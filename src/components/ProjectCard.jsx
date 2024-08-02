@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export function ProjectCard({ title, year, description, image, buttonText, caseLink }) {
+export function ProjectCard({ title, year, description, descriptions, image, buttonText, caseLink }) {
     const [isOpen, setIsOpen] = useState(false);
 
     function togglebar() {
@@ -58,7 +58,7 @@ export function ProjectCard({ title, year, description, image, buttonText, caseL
                     className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? 'max-h-screen' : 'max-h-0'}`}
                 >
                     <p className="text-gray-300 text-sm text-left w-full pt-4">
-                        {description}
+                        {descriptions}
                     </p>
                 </div>
             </div>

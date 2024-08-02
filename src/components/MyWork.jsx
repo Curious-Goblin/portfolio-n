@@ -9,6 +9,7 @@ const projects = [
     year: '2024 - User Interface Design',
     description:
       'Transformed an AI website deepshape.tech with a modern redesign, optimizing the User Interface of the website and elevating brand identity. Resulted in improved user engagement, increased Readability, and a seamless Visual experience.',
+    descriptions: "Redesigned deepshape.tech with a modern UI, enhancing brand identity and improving user engagement, readability, and visual experience.",
     image:
       'https://res.cloudinary.com/dgp2hrhld/image/upload/v1720353086/file_cover_-_2_g3vlki.png',
     buttonText: 'Read case study',
@@ -20,6 +21,7 @@ const projects = [
     year: '2023 - Product Design',
     description:
       'Designed a user-friendly food delivery app that enables users to effortlessly order their favourite meals. The app offers a seamless experience for browsing restaurants and also selecting dishes, and managing orders, making meal planning convenient and enjoyable.',
+    descriptions: 'Designed a user-friendly food delivery app for effortless meal ordering, seamless restaurant browsing, dish selection, & order management.',
     image:
       'https://res.cloudinary.com/dgp2hrhld/image/upload/v1720353108/Frame_3_k52oa9.png',
     buttonText: 'Read case study',
@@ -31,6 +33,7 @@ const projects = [
     year: '2024 - Web/App design',
     description:
       "Developed an intuitive AI-powered trading platform UI for QuantBrian. The platform offers a vast array of market data, seamless trade execution, and personalized AI-driven recommendations, significantly enhancing the user's trading experience.",
+    descriptions: 'Developed an intuitive AI-powered trading platform UI for QuantBrian, enhancing market data access, trade execution, and personalized recommendations.',
     image:
       'https://res.cloudinary.com/dgp2hrhld/image/upload/v1720353070/4_tghoji.png',
     buttonText: 'Read case study',
@@ -42,6 +45,7 @@ const projects = [
     year: '2023 - Product Design',
     description:
       'Designed a user-friendly food delivery app that enables users to effortlessly order their favourite meals. The app offers a seamless experience for browsing restaurants and also selecting dishes, and managing orders, making meal planning convenient and enjoyable.',
+    descriptions: 'Designed a user-friendly food delivery app for effortless meal ordering, seamless restaurant browsing, dish selection, & order management.',
     image:
       'https://res.cloudinary.com/dgp2hrhld/image/upload/v1720353108/Frame_3_k52oa9.png',
     buttonText: 'Read case study',
@@ -53,6 +57,7 @@ const projects = [
     year: '2024 - Web/App design',
     description:
       "Developed an intuitive AI-powered trading platform UI for QuantBrian. The platform offers a vast array of market data, seamless trade execution, and personalized AI-driven recommendations, significantly enhancing the user's trading experience.",
+    descriptions: 'Developed an intuitive AI-powered trading platform UI for QuantBrian, enhancing market data access, trade execution, and personalized recommendations.',
     image:
       'https://res.cloudinary.com/dgp2hrhld/image/upload/v1720353070/4_tghoji.png',
     buttonText: 'Read case study',
@@ -128,8 +133,7 @@ const Work = () => {
   };
 
   const exitTransition = {
-    duration: 0.5,
-    ease: [0.4, 0.0, 0.2, 1],
+    ease: [0.4, 0.0, 0.2, 1]
   };
 
   const transition = {
@@ -186,13 +190,13 @@ const Work = () => {
         titleObserver.unobserve(titleRef.current);
       }
     };
-  }, [isOpen,toShow]);
+  }, [isOpen, toShow]);
 
   useEffect(() => {
     if (isTitleInView) {
       setToShow((prevToShow) => prevToShow.map(() => false));
     }
-  }, [isTitleInView,isOpen]);
+  }, [isTitleInView, isOpen]);
 
   const renderProjectCards = (projectsToRender) => {
     return projectsToRender.map((project, index) => (
