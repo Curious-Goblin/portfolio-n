@@ -15,8 +15,8 @@ const Work = () => {
   };
 
   const exitTransition = {
-    duration: 0.5, // Slower duration for exiting
-    ease: [0.4, 0.0, 0.2, 1], // Custom ease for a slower effect
+    duration: 0.5,
+    ease: [0.4, 0.0, 0.2, 1],
   };
 
   const transition = {
@@ -58,7 +58,31 @@ const Work = () => {
       caseLink:
         'https://www.figma.com/design/gb97IsFHIJOwYY9g5sAMST/QuantBrain?node-id=0-1&t=f3O5u1EtAbyPzdDx-1',
     },
+    {
+      title: 'Food Delivery App',
+      year: '2023 - Product Design',
+      description:
+        'Designed a user-friendly food delivery app that enables users to effortlessly order their favourite meals. The app offers a seamless experience for browsing restaurants and also selecting dishes, and managing orders, making meal planning convenient and enjoyable.',
+      image:
+        'https://res.cloudinary.com/dgp2hrhld/image/upload/v1720353108/Frame_3_k52oa9.png',
+      buttonText: 'Read case study',
+      caseLink:
+        'https://www.behance.net/gallery/179536033/UIUX-Case-Study-on-Food-Delivery-App',
+    },
+    {
+      title: 'AI Trading Web App',
+      year: '2024 - Web/App design',
+      description:
+        "Developed an intuitive AI-powered trading platform UI for QuantBrian. The platform offers a vast array of market data, seamless trade execution, and personalized AI-driven recommendations, significantly enhancing the user's trading experience.",
+      image:
+        'https://res.cloudinary.com/dgp2hrhld/image/upload/v1720353070/4_tghoji.png',
+      buttonText: 'Read case study',
+      caseLink:
+        'https://www.figma.com/design/gb97IsFHIJOwYY9g5sAMST/QuantBrain?node-id=0-1&t=f3O5u1EtAbyPzdDx-1',
+    }
   ];
+
+  const initialProjectsCount = 3; // Number of projects initially shown
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -79,7 +103,7 @@ const Work = () => {
     return () => {
       refs.current.forEach((ref) => ref && observer.unobserve(ref));
     };
-  }, []);
+  }, [isOpen]);
 
   const renderProjectCards = (projectsToRender) => {
     return projectsToRender.map((project, index) => (
@@ -109,23 +133,15 @@ const Work = () => {
         reflects my focus on user-centered design and my commitment to excellence in user
         experience.
       </p>
-      <div className="">
-        {renderProjectCards(projects)}
-        {isOpen && renderProjectCards(projects)}
+      <div>
+        {renderProjectCards(projects.slice(0, initialProjectsCount))}
+        {isOpen && renderProjectCards(projects.slice(initialProjectsCount))}
       </div>
       <div
         onClick={() => setIsOpen((prev) => !prev)}
-        className={`${isOpen ? 'hidden' : 'block'
-          } cursor-pointer font-bold pt-6 pb-16 text-center underline underline-offset-4 text-white`}
+        className={`cursor-pointer font-bold pt-6 pb-16 text-center underline underline-offset-4 text-white`}
       >
-        See all projects
-      </div>
-      <div
-        onClick={() => setIsOpen((prev) => !prev)}
-        className={`${isOpen ? 'block' : 'hidden'
-          } cursor-pointer font-bold pt-6 pb-28 text-center underline underline-offset-8 text-white`}
-      >
-        See less
+        {isOpen ? 'See less' : 'See all projects'}
       </div>
     </div>
   );
