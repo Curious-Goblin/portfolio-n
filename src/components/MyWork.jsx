@@ -1,4 +1,3 @@
-import { useInView } from 'framer-motion';
 import { ProjectCard } from './ProjectCard';
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
@@ -58,59 +57,6 @@ const projects = [
     description:
       "Developed an intuitive AI-powered trading platform UI for QuantBrian. The platform offers a vast array of market data, seamless trade execution, and personalized AI-driven recommendations, significantly enhancing the user's trading experience.",
     descriptions: 'Developed an intuitive AI-powered trading platform UI for QuantBrian, enhancing market data access, trade execution, and personalized recommendations.',
-    image:
-      'https://res.cloudinary.com/dgp2hrhld/image/upload/v1720353070/4_tghoji.png',
-    buttonText: 'Read case study',
-    caseLink:
-      'https://www.figma.com/design/gb97IsFHIJOwYY9g5sAMST/QuantBrain?node-id=0-1&t=f3O5u1EtAbyPzdDx-1',
-  }
-];
-
-const projectsa = [
-  {
-    title: 'AI Website',
-    year: '2024 - User Interface Design',
-    description: "Redesigned deepshape.tech with a modern UI, enhancing brand identity and improving user engagement, readability, and visual experience.",
-    image:
-      'https://res.cloudinary.com/dgp2hrhld/image/upload/v1720353086/file_cover_-_2_g3vlki.png',
-    buttonText: 'Read case study',
-    caseLink:
-      'https://www.behance.net/gallery/190880591/Web-UI-Design-Deespshape-(Artificial-intelligence)',
-  },
-  {
-    title: 'Food Delivery App',
-    year: '2023 - Product Design',
-    description: 'Designed a user-friendly food delivery app for effortless meal ordering, seamless restaurant browsing, dish selection, & order management.',
-    image:
-      'https://res.cloudinary.com/dgp2hrhld/image/upload/v1720353108/Frame_3_k52oa9.png',
-    buttonText: 'Read case study',
-    caseLink:
-      'https://www.behance.net/gallery/179536033/UIUX-Case-Study-on-Food-Delivery-App',
-  },
-  {
-    title: 'AI Trading Web App',
-    year: '2024 - Web/App design',
-    description: 'Developed an intuitive AI-powered trading platform UI for QuantBrian, enhancing market data access, trade execution, and personalized recommendations.',
-    image:
-      'https://res.cloudinary.com/dgp2hrhld/image/upload/v1720353070/4_tghoji.png',
-    buttonText: 'Read case study',
-    caseLink:
-      'https://www.figma.com/design/gb97IsFHIJOwYY9g5sAMST/QuantBrain?node-id=0-1&t=f3O5u1EtAbyPzdDx-1',
-  },
-  {
-    title: 'Food Delivery App',
-    year: '2023 - Product Design',
-    description: 'Designed a user-friendly food delivery app for effortless meal ordering, seamless restaurant browsing, dish selection, & order management.',
-    image:
-      'https://res.cloudinary.com/dgp2hrhld/image/upload/v1720353108/Frame_3_k52oa9.png',
-    buttonText: 'Read case study',
-    caseLink:
-      'https://www.behance.net/gallery/179536033/UIUX-Case-Study-on-Food-Delivery-App',
-  },
-  {
-    title: 'AI Trading Web App',
-    year: '2024 - Web/App design',
-    description: 'Developed an intuitive AI-powered trading platform UI for QuantBrian, enhancing market data access, trade execution, and personalized recommendations.',
     image:
       'https://res.cloudinary.com/dgp2hrhld/image/upload/v1720353070/4_tghoji.png',
     buttonText: 'Read case study',
